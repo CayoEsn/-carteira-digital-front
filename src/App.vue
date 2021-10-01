@@ -1,14 +1,28 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <div id="nav" v-if="usuario">
       <router-link to="/home">Home</router-link> |
-       <router-link to="/cadastro">Criar usuário</router-link> |
+       <!-- <router-link to="/cadastro">Criar usuário</router-link> | -->
       <router-link to="/historico-transferencias">Histórico de transação</router-link> |
       <router-link to="/transacao">Transação</router-link>
     </div>
     <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  name: 'home',
+  data () {
+    return {
+      usuario: ''
+    }
+  },
+  mounted () {
+    this.usuario = JSON.parse(localStorage.getItem('usuario'))
+  }
+}
+</script>
 
 <style>
 #app {

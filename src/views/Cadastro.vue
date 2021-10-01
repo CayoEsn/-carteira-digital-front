@@ -37,7 +37,7 @@ export default {
         .post('https://carteira-digital-backend.herokuapp.com/auth/cadastro', { nome: this.nome, login: this.login, senha: this.senha })
         .then(() => {
           alert('Usuário cadastrado com sucesso')
-          // this.$router.replace('login')
+          this.$router.replace('login')
         })
         .catch((error) => {
           return alert(error)

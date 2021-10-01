@@ -8,12 +8,12 @@
     <div class="btn-login">
       <button @click="efetuarLogin">Login</button>
     </div>
-    <!-- <p>
+    <p>
       Você não tem conta?
       <span>
         <router-link to="/cadastro">crie uma conta</router-link>
       </span>
-    </p> -->
+    </p>
   </div>
 </template>
 
