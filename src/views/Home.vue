@@ -29,7 +29,7 @@ export default {
     },
     buscarSaldo: function () {
       axios
-        .get('http://localhost:5000/saldo/saldo-usuario', { params: { login: this.usuario.login } })
+        .get('https://carteira-digital-backend.herokuapp.com/saldo/saldo-usuario', { params: { login: this.usuario.login } })
         .then((response) => {
           this.saldo = response.data.saldo
         })

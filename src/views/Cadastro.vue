@@ -34,7 +34,7 @@ export default {
       }
 
       axios
-        .post('http://localhost:5000/auth/cadastro', { nome: this.nome, login: this.login, senha: this.senha })
+        .post('https://carteira-digital-backend.herokuapp.com/auth/cadastro', { nome: this.nome, login: this.login, senha: this.senha })
         .then(() => {
           alert('Usuário cadastrado com sucesso')
           // this.$router.replace('login')

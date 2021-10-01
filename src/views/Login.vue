@@ -38,7 +38,7 @@ export default {
       }
 
       axios
-        .post('http://localhost:5000/auth/login', { login: this.login, senha: this.senha })
+        .post('https://carteira-digital-backend.herokuapp.com/auth/login', { login: this.login, senha: this.senha })
         .then((response) => {
           alert('Usuário logado com sucesso')
           localStorage.setItem('usuario', JSON.stringify({ nome: response.data.usuario.nome, login: response.data.usuario.login }))

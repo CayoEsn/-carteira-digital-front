@@ -27,7 +27,7 @@ export default {
   methods: {
     buscarHistorico: function () {
       axios
-        .get('http://localhost:5000/movimentacao/movimentacoes-usuario', { params: { login: this.usuario.login } })
+        .get('https://carteira-digital-backend.herokuapp.com/movimentacao/movimentacoes-usuario', { params: { login: this.usuario.login } })
         .then((response) => {
           this.historico_transferencias = response.data.movimentacoes
           this.historico_transferencias.reverse(function (a, b) {

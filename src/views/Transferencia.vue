@@ -38,7 +38,7 @@ export default {
       }
 
       axios
-        .post('http://localhost:5000/movimentacao/transferencia', { login_origem: this.login_origem, login_destino: this.login_destino, valor_transferido: this.valor_transferido })
+        .post('https://carteira-digital-backend.herokuapp.com/movimentacao/transferencia', { login_origem: this.login_origem, login_destino: this.login_destino, valor_transferido: this.valor_transferido })
         .then(() => {
           alert('Transferência realizada com sucesso')
         })
