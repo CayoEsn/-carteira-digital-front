@@ -1,5 +1,5 @@
 <template>
-  <div class="sign-up">
+  <div class="transferencia">
     <p>Transferência</p>
     <input type="text" placeholder="Login de Origem" v-model="login_origem" />
     <br />
@@ -51,7 +51,7 @@ export default {
 </script>
 
  <style scoped>
-.sign-up {
+.transferencia {
   margin-top: 40px;
 }
 input {
@@ -63,7 +63,7 @@ button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #1606f3;
+  background: #4caf50;
   border: 0;
   padding: 15px;
   color: #ffffff;
@@ -72,10 +72,12 @@ button {
   transition: all 0.3 ease;
   cursor: pointer;
 }
-span {
-  display: block;
-  margin-top: 20px;
-  font-size: 11px;
+p {
+  margin-top: 40px;
+  font-size: 13px;
 }
-
+p a {
+  text-decoration: underline;
+  cursor: pointer;
+}
 </style>
