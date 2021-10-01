@@ -20,6 +20,7 @@ export default {
   },
   mounted () {
     this.usuario = JSON.parse(localStorage.getItem('usuario'))
+    console.log(this.usuario)
   }
 }
 </script>
