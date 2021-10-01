@@ -7,7 +7,7 @@
     <br />
     <input type="number" placeholder="Valor da Transferência" v-model="valor_transferido" />
     <br />
-    <button @click="transferir">Transferir</button>
+    <button @click="transferir">Transferir.</button>
   </div>
 </template>
 
