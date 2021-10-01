@@ -76,8 +76,4 @@ p {
   margin-top: 40px;
   font-size: 13px;
 }
-p a {
-  text-decoration: underline;
-  cursor: pointer;
-}
 </style>
