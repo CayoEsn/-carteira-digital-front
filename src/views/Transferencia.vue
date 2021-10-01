@@ -50,7 +50,7 @@ export default {
 }
 </script>
 
- <style scoped>
+<style scoped>
 .transferencia {
   margin-top: 40px;
 }
