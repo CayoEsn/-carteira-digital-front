@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
 
-    <h2>Bem-Vindo {{ usuario.nome }}</h2>
+    <h2 v-if="usuario">Bem-Vindo {{ usuario.nome }}</h2>
     <h4>Seu saldo é de: R$ {{ formatPrice(saldo) }}</h4>
 
     <button @click='sair'>Sair</button>
@@ -14,7 +14,7 @@ export default {
   name: 'home',
   data () {
     return {
-      usuario: '',
+      usuario: null,
       saldo: 0
     }
   },
@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     sair: function () {
-      localStorage.removeItem('login')
+      localStorage.removeItem('usuario')
       this.$router.replace('login')
     },
     buscarSaldo: function () {

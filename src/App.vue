@@ -15,12 +15,11 @@ export default {
   name: 'home',
   data () {
     return {
-      usuario: ''
+      usuario: null
     }
   },
   mounted () {
     this.usuario = JSON.parse(localStorage.getItem('usuario'))
-    console.log(this.usuario)
   }
 }
 </script>
